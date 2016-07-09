@@ -1,4 +1,4 @@
-package cucumber.sunshinetests.test;
+package com.android.example.sunshinetests.test;
 
 import android.os.Bundle;
 import android.support.test.runner.MonitoringInstrumentation;

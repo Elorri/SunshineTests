@@ -5,14 +5,14 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "cucumber.sunshinetests"
+        applicationId "com.android.example.sunshinetests"
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
 
-        testApplicationId "cucumber.sunshinetests.test"
-        testInstrumentationRunner "cucumber.sunshinetests.test.Instrumentation"
+        testApplicationId "com.android.example.sunshinetests.test"
+        testInstrumentationRunner "com.android.example.sunshinetests.test.Instrumentation"
 
     }
 

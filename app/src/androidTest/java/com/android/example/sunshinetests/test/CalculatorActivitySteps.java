@@ -1,19 +1,22 @@
-package cucumber.sunshinetests.test;
+package com.android.example.sunshinetests.test;
 
 import android.test.ActivityInstrumentationTestCase2;
+
+import com.android.example.sunshinetests.CalculatorActivity;
+import com.android.example.sunshinetests.R;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import cucumber.sunshinetests.CalculatorActivity;
-import cucumber.sunshinetests.R;
+
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
+
 
 /**
  * We extend ActivityInstrumentationTestCase2 in order to have access to methods like getActivity

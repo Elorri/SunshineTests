@@ -1,10 +1,12 @@
-package cucumber.sunshinetests;
+package com.android.example.sunshinetests;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+
 
 public class CalculatorActivity extends Activity {
     private static enum Operation {ADD, SUB, MULT, DIV, NONE}
