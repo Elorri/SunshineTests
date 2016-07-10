@@ -9,6 +9,6 @@ import cucumber.api.junit.Cucumber;
  * Created by Elorri on 10/07/2016.
  */
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "/AndroidStudioProjects/SunshineTests/app/src/test/assets/features")
+@CucumberOptions(features = "src/test/assets/features")
 public class JunitCucumberRunner {
 }
