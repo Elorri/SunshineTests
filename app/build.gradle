@@ -17,18 +17,15 @@ android {
     }
 
 
-    packagingOptions {
-        exclude 'LICENSE.txt'
-        pickFirst('META-INF/maven/com.google.guava/guava/pom.xml')
-        pickFirst('META-INF/maven/com.google.guava/guava/pom.properties')
-    }
+//    packagingOptions {
+//        exclude 'LICENSE.txt'
+//        pickFirst('META-INF/maven/com.google.guava/guava/pom.xml')
+//        pickFirst('META-INF/maven/com.google.guava/guava/pom.properties')
+//    }
 
     sourceSets {
         androidTest {
             assets.srcDirs = ['src/androidTest/assets']
-        }
-        test {
-            assets.srcDirs = ['src/test/assets']
         }
     }
 
