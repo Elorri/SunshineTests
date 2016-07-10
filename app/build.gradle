@@ -11,8 +11,8 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testApplicationId "com.android.example.sunshinetests.test"
-        testInstrumentationRunner "com.android.example.sunshinetests.test.Instrumentation"
+        testApplicationId "com.android.example.sunshinetests.androidtest"
+        testInstrumentationRunner "com.android.example.sunshinetests.androidtest.Instrumentation"
 
     }
 
@@ -27,7 +27,11 @@ android {
         androidTest {
             assets.srcDirs = ['src/androidTest/assets']
         }
+        test {
+            assets.srcDirs = ['src/test/assets']
+        }
     }
+
 
     buildTypes {
         release {
@@ -39,7 +43,7 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
+    //testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
     androidTestCompile 'com.android.support:support-annotations:23.1.1'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
@@ -54,7 +58,7 @@ dependencies {
     androidTestCompile 'info.cukes:cucumber-jvm-deps:1.0.3'
 
 
- //   testCompile 'info.cukes:cucumber-junit:1.2.4'
+    testCompile 'info.cukes:cucumber-junit:1.2.4'
     testCompile('info.cukes:cucumber-android:1.2.4') {
         exclude module: 'cucumber-jvm-deps'
     }

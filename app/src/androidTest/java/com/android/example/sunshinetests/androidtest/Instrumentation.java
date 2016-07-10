@@ -1,4 +1,4 @@
-package com.android.example.sunshinetests.test;
+package com.android.example.sunshinetests.androidtest;
 
 import android.os.Bundle;
 import android.support.test.runner.MonitoringInstrumentation;

@@ -2,6 +2,7 @@ package com.android.example.sunshinetests.test; /**
  * Created by Elorri on 10/07/2016.
  */
 
+
 import org.junit.Test;
 
 import cucumber.api.PendingException;
@@ -9,6 +10,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 
 import static org.junit.Assert.assertEquals;
+
 
 public class MyStepdefs {
 
