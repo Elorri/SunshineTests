@@ -1,69 +1,32 @@
-## Cukeulator Example Test
-This is the example test-project for the Cukeulator app for Android Studio 1.0.2.
+# Sunshine tests
 
-### Setup
-Features must be placed in `assets/features/`. Subdirectories are allowed.
+This repository is intended to recreate the Udacity Sunshine app using a TDD/BDD approach from ground zero.
 
-The rest of the dependencies are added automatically in `app/build.gradle`.
+## What's done
 
-The cucumber-android dependency is added as (see `app/build.gradle`):
+Right now only a cucumber description of the different Sunshine feature is done.
+	
 
-```
-androidTestCompile 'info.cukes:cucumber-android:<version>'
-```
+## License
+	
+		The MIT License (MIT)
 
-### Using gradle
+	Copyright (c) 2016 ETCHEMENDY ELORRI
 
-To build the test apk:
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
 
-```
-cd cucumber-jvm/examples/android/android-studio/Cukeulator
+	The above copyright notice and this permission notice shall be included in all
+	copies or substantial portions of the Software.
 
-./gradlew --parallel :app:assembleDebugTest
-```
-
-The build generates an apk in app/build/outputs/apk/app-debug.apk.
-
-To install the apk on a device:
-
-```
-adb install -r app/build/outputs/apk/app-debug.apk
-```
-
-To verify that the test is installed, run:
-
-```
-adb shell pm list instrumentation
-```
-
-The command output should display;
-
-```
-instrumentation:sunshinetests.test/cucumber.api.android.CucumberInstrumentation (target=sunshinetests)
-```
-
-To run the test:
-
-```
-cd cucumber-jvm/examples/android/android-studio/Cukeulator;
-./gradlew connectedCheck
-```
-
-As an alternative option, the test can be run with adb:
-
-```
-adb shell am instrument -w sunshinetests.test/sunshinetests.test.Instrumentation
-```
-
-### Using an Android Studio IDE
-1. Import the example to Android Studio: `File > Import Project`.
-2. Create a test run configuration:
-    1.  Run > Edit Configurations
-    2. Click `+` button and select Android Tests
-    3. Specify test name: `CalculatorTest`
-    4. Select module: `app`
-    5. Enter a Specific instrumentation runner: `sunshinetests.test.Instrumentation`
-    6. Click Ok
-
-### Output
-Filter for the logcat tag `cucumber-android` in [DDMS](https://developer.android.com/tools/debugging/ddms.html).
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	SOFTWARE.
