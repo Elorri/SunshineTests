@@ -84,7 +84,7 @@ Feature: Main View
       | 3    | rainy      | ic_rain    | 94440     | 20       | 25       |
 
 
-  Scenario: Successful cursor creation
+  Scenario : Successful cursor creation
   Commits I want
   feat : Add the MainView CursorLoader
   test : Add the MainView CursorLoader
