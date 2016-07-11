@@ -3,28 +3,21 @@ package com.android.example.sunshinetests.test; /**
  */
 
 
-import org.junit.Test;
-
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.When;
-
-import static org.junit.Assert.assertEquals;
 
 
-public class MyStepdefs {
+public class SunshineTests {
 
-    @Test
-    @Given("^I have a test$")
-    public void iHaveATest() throws Throwable {
-        assertEquals(4, 2 + 2);
+
+    @Given("^Today date in millis is (\\d+)$")
+    public void todayDateInMillisIs(int todayInMillis) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        //throw new cucumber.api.PendingException();
+        throw new PendingException();
     }
 
-
-    @When("^I test it$")
-    public void iTestIt() throws Throwable {
+    @Given("^I have successfully displayed the list of items$")
+    public void iHaveSuccessfullyDisplayedTheListOfItems() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }

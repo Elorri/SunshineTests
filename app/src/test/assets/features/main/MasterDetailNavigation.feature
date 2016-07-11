@@ -27,4 +27,3 @@ Feature : Master Detail Navigation Flow
 
 
 
-
