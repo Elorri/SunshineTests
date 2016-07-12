@@ -107,4 +107,6 @@ public class CalculatorActivitySteps extends ActivityInstrumentationTestCase2<Ca
     public void I_should_see_s_on_the_display(final String s) {
         onView(withId(R.id.txt_calc_display)).check(matches(withText(s)));
     }
+
+
 }

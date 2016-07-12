@@ -14,6 +14,10 @@ android {
         testApplicationId "com.android.example.sunshinetests.androidtest"
         testInstrumentationRunner "com.android.example.sunshinetests.androidtest.Instrumentation"
 
+        testOptions {
+            unitTests.returnDefaultValues = true
+        }
+
     }
 
 
