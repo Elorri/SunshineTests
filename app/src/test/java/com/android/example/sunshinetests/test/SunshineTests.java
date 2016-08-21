@@ -50,6 +50,7 @@ public class SunshineTests {
     @When("^I query ContentProvider with an uri of type (\\d+)$")
     public void iQueryContentProviderWithAnUriOfType(int WEATHER_WITH_LOCATION) throws Throwable {
         assertEquals(SunshineProvider.buildUriMatcher().match(helper.getWeatherLocationUri()), WEATHER_WITH_LOCATION);
+        helper.getSunshineProvider().query(helper.getWeatherLocationUri(), null, null, null, "asc");
 
     }
 
